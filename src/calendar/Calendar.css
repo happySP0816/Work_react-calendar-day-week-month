@@ -1,0 +1,93 @@
+
+/* evenst */
+
+body .calendar_default_event_inner {
+    background: #a3c9f1;
+    color: #000;
+    border: 1px solid #2e78d6;
+    border-radius: 5px;
+    font-size: 10pt;
+    padding: 5px;
+    opacity: 0.8;
+}
+
+body .month_default_event_inner {
+    background: #a3c9f1;
+    color: #000;
+    border: 1px solid #2e78d6;
+    border-radius: 5px;
+    font-size: 10pt;
+    padding: 5px;
+    opacity: 0.8;
+}
+
+/* toolbar */
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigator {
+    margin-right: 10px;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+/* toolbar */
+.toolbar {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.toolbar-group {
+    display: inline-flex;
+}
+
+.toolbar button {
+    background-color: #3c78d8;
+    color: white;
+    border: 0;
+    padding: .5rem 1rem;
+    width: 80px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 1px;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+    box-sizing: border-box;
+}
+
+.toolbar button.selected {
+    background-color: #1c4587;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+.toolbar .toolbar-group button:first-child {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.toolbar .toolbar-group button:last-child {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.toolbar button.standalone {
+    border-radius: 30px;
+    margin-left: 10px; /* Adds space between standalone and other buttons */
+    margin-right: 0; /* Reset margin-right for standalone button */
+}
+
+.toolbar button:hover {
+    background-color: #2f66c4;
+    box-shadow: 0 5px 7px rgba(0,0,0,0.1);
+}
+
+.toolbar button:active {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

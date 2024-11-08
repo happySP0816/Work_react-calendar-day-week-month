@@ -1,0 +1,1 @@
+Module dependencies are not bundled with this project. Review the individual licenses after installation ("npm install"/"yarn install") in node_modules.
